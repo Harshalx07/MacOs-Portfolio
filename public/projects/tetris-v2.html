@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris v2 | Harshal Galande</title>
+    <link rel="stylesheet" href="/projects/project.css" />
+  </head>
+  <body style="--accent:#14b8a6;">
+    <main class="page">
+      <section class="hero">
+        <span class="eyebrow">GitOps Deployment</span>
+        <h1>Tetris v2 with <span class="accent">Jenkins + ArgoCD</span></h1>
+        <p>
+          A fast deployment workflow where Jenkins builds and tags Docker images, updates Kubernetes manifests,
+          and lets ArgoCD handle cluster sync through GitOps.
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/Harshalx07" target="_blank" rel="noreferrer">GitHub Profile</a>
+          <a href="/resume.pdf" target="_blank" rel="noreferrer">View Resume</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <div class="stat">3 min</div>
+          <div class="stat-label">Deploy cycle</div>
+        </article>
+        <article class="card">
+          <div class="stat">GitOps</div>
+          <div class="stat-label">Manifest-driven rollout</div>
+        </article>
+        <article class="card">
+          <div class="stat">Sprint fix</div>
+          <div class="stat-label">Image-tag mismatch resolved</div>
+        </article>
+      </section>
+
+      <section class="card" style="margin-top:18px;">
+        <h2>What the pipeline does</h2>
+        <ul>
+          <li>Builds and tags Docker images in Jenkins.</li>
+          <li>Pushes images to Docker Hub for deployment consumption.</li>
+          <li>Updates Kubernetes manifests through a GitOps workflow.</li>
+          <li>Lets ArgoCD sync the cluster and surface drift immediately.</li>
+        </ul>
+        <div class="code">stages:
+  - build
+  - push
+  - update-manifests
+  - argocd-sync</div>
+      </section>
+    </main>
+  </body>
+</html>

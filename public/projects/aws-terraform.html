@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS Terraform | Harshal Galande</title>
+    <link rel="stylesheet" href="/projects/project.css" />
+  </head>
+  <body style="--accent:#8b5cf6;">
+    <main class="page">
+      <section class="hero">
+        <span class="eyebrow">Infrastructure as Code</span>
+        <h1>AWS environments provisioned with <span class="accent">reusable Terraform modules</span></h1>
+        <p>
+          A multi-environment AWS setup covering networking, compute, storage, identity, databases, and scaling through repeatable Terraform modules.
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/Harshalx07" target="_blank" rel="noreferrer">GitHub Profile</a>
+          <a href="https://www.linkedin.com/in/harshal-galande/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <div class="stat">40+</div>
+          <div class="stat-label">AWS resources</div>
+        </article>
+        <article class="card">
+          <div class="stat">65%</div>
+          <div class="stat-label">Deployment velocity gain</div>
+        </article>
+        <article class="card">
+          <div class="stat">10 min</div>
+          <div class="stat-label">Provisioning to live</div>
+        </article>
+      </section>
+
+      <section class="card" style="margin-top:18px;">
+        <h2>Infrastructure scope</h2>
+        <ul>
+          <li>VPC with public and private subnets plus NAT Gateway.</li>
+          <li>Elastic Load Balancing and Auto Scaling for availability.</li>
+          <li>Reusable modules for EC2, S3, IAM, and related AWS services.</li>
+        </ul>
+        <div class="code">modules:
+  - vpc
+  - ec2
+  - iam
+  - rds
+  - s3
+  - autoscaling
+environments:
+  - dev
+  - staging
+  - production</div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VSCode Workspace</title>
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; height: 100%; background: #111827; color: #e5eefb; font-family: "SF Pro Display", Inter, sans-serif; }
+      body { display: flex; }
+      .sidebar {
+        width: 230px;
+        background: #0f172a;
+        border-right: 1px solid rgba(255,255,255,0.08);
+        padding: 16px 12px;
+      }
+      .title {
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(226,232,240,0.6);
+        margin-bottom: 12px;
+      }
+      .tree-item {
+        padding: 8px 10px;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #dbeafe;
+        background: rgba(59,130,246,0.12);
+        margin-bottom: 8px;
+      }
+      .tree-sub {
+        padding: 6px 10px 6px 24px;
+        font-size: 13px;
+        color: rgba(219,234,254,0.78);
+      }
+      .main { flex: 1; display: flex; flex-direction: column; }
+      .tabs {
+        display: flex;
+        gap: 2px;
+        padding: 10px 12px 0;
+        background: #0b1220;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+      }
+      .tab {
+        padding: 10px 14px;
+        border-radius: 10px 10px 0 0;
+        background: #162033;
+        color: #f8fafc;
+        font-size: 13px;
+      }
+      .editor {
+        flex: 1;
+        padding: 18px 22px;
+        overflow: auto;
+        background: linear-gradient(180deg, #111827, #0b1220);
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        font: 13px/1.7 "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+        color: #dbeafe;
+      }
+      .accent { color: #93c5fd; }
+      .muted { color: #94a3b8; }
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="title">Explorer</div>
+      <div class="tree-item">devops-portfolio</div>
+      <div class="tree-sub">resume.md</div>
+      <div class="tree-sub">pipeline.groovy</div>
+      <div class="tree-sub">terraform.tfvars</div>
+      <div class="tree-sub">observability.yaml</div>
+      <div class="tree-sub">projects/</div>
+    </aside>
+    <main class="main">
+      <div class="tabs">
+        <div class="tab">resume.md</div>
+      </div>
+      <div class="editor">
+        <pre><span class="accent"># Harshal Galande</span>
+<span class="muted">## DevOps Engineer</span>
+
+- Pune, India
+- GitHub: Harshalx07
+- LinkedIn: harshalgalande
+
+<span class="accent">core_stack:</span>
+  ci_cd:
+    - Jenkins
+    - GitHub Actions
+    - ArgoCD
+  containers:
+    - Docker
+    - Kubernetes
+    - Helm
+  cloud:
+    - AWS
+    - GCP
+  iac:
+    - Terraform
+    - Ansible
+  observability:
+    - Prometheus
+    - Grafana
+
+<span class="accent">impact:</span>
+  release_cycle: "2 hours -> 15 minutes"
+  provisioning_time: "under 10 minutes"
+  mttd: "under 5 minutes"
+
+<span class="accent">featured_projects:</span>
+  - Tetris v2 GitOps deployment
+  - Spring Boot CI/CD pipeline
+  - GKE microservices platform
+  - AWS Terraform infrastructure</pre>
+      </div>
+    </main>
+  </body>
+</html>

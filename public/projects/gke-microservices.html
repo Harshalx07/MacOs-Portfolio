@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GKE Microservices | Harshal Galande</title>
+    <link rel="stylesheet" href="/projects/project.css" />
+  </head>
+  <body style="--accent:#22c55e;">
+    <main class="page">
+      <section class="hero">
+        <span class="eyebrow">Cloud Native</span>
+        <h1>Six-service ecommerce platform on <span class="accent">Google Kubernetes Engine</span></h1>
+        <p>
+          A distributed deployment covering Java, Python, Go, and .NET services managed with Helm, rolling updates, and Horizontal Pod Autoscaler.
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/Harshalx07" target="_blank" rel="noreferrer">GitHub Profile</a>
+          <a href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <div class="stat">6</div>
+          <div class="stat-label">Independent services</div>
+        </article>
+        <article class="card">
+          <div class="stat">70%</div>
+          <div class="stat-label">Uptime improvement</div>
+        </article>
+        <article class="card">
+          <div class="stat">HPA</div>
+          <div class="stat-label">Autoscaling enabled</div>
+        </article>
+      </section>
+
+      <section class="card" style="margin-top:18px;">
+        <h2>Platform highlights</h2>
+        <ul>
+          <li>Helm-managed deployments for cleaner rollout control.</li>
+          <li>Rolling updates to reduce disruption during releases.</li>
+          <li>Per-service scaling for better cost and performance behavior.</li>
+        </ul>
+        <div class="code">services:
+  - java
+  - python
+  - go
+  - dotnet
+deployment:
+  strategy: RollingUpdate
+scaling:
+  mode: HorizontalPodAutoscaler</div>
+      </section>
+    </main>
+  </body>
+</html>

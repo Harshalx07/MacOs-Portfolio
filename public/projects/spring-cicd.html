@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spring CI/CD | Harshal Galande</title>
+    <link rel="stylesheet" href="/projects/project.css" />
+  </head>
+  <body style="--accent:#3b82f6;">
+    <main class="page">
+      <section class="hero">
+        <span class="eyebrow">CI/CD</span>
+        <h1>Spring Boot delivery with <span class="accent">multi-stage Docker builds</span></h1>
+        <p>
+          A webhook-triggered pipeline that builds, tests, and packages a Java Spring Boot application for Kubernetes delivery.
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/Harshalx07" target="_blank" rel="noreferrer">GitHub Profile</a>
+          <a href="https://www.linkedin.com/in/harshal-galande/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <div class="stat">50%</div>
+          <div class="stat-label">Build reliability improvement</div>
+        </article>
+        <article class="card">
+          <div class="stat">60%</div>
+          <div class="stat-label">Image size reduction</div>
+        </article>
+        <article class="card">
+          <div class="stat">Webhook</div>
+          <div class="stat-label">Push-triggered automation</div>
+        </article>
+      </section>
+
+      <section class="card" style="margin-top:18px;">
+        <h2>Why it mattered</h2>
+        <ul>
+          <li>Reduced container bloat with multi-stage Docker builds.</li>
+          <li>Improved Kubernetes pull times across all nodes.</li>
+          <li>Made delivery repeatable from GitHub push to deployment artifact.</li>
+        </ul>
+        <div class="code">pipeline {
+  triggers { githubPush() }
+  stages {
+    stage('Build') {}
+    stage('Dockerize') {}
+    stage('Deploy') {}
+  }
+}</div>
+      </section>
+    </main>
+  </body>
+</html>
